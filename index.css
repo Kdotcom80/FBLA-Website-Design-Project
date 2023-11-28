@@ -88,14 +88,14 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  row-gap: 20px;
-  column-gap: 30px;
+  row-gap: 10px;
+  column-gap: 0px;
   padding: 0px;
 }
 
 
 
-.scholarship {
+.scholarship-header {
   color: black;
   text-align: left;
   font-size: 30px;
