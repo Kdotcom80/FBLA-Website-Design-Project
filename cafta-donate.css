@@ -22,6 +22,11 @@ body {
     background-color: #310E59c7;
   }
 
+  .cafta-img {
+    height: 55px;
+    float: left;
+  }
+
   .cafta {
     float: left;
     text-align: left;

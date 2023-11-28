@@ -10,6 +10,11 @@ body {
   padding: 0;
 }
 
+.cafta-img {
+  height: 55px;
+  float: left;
+}
+
 .cafta {
   float: left;
   text-align: left;

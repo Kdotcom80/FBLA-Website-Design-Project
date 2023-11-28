@@ -11,6 +11,11 @@ body {
   color: #333;
 }
 
+.cafta-img {
+  height: 55px;
+  float: left;
+}
+
 .cafta {
   float: left;
   text-align: left;
