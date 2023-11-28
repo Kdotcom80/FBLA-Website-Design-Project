@@ -112,3 +112,8 @@ ul {
 ul li {
   margin-bottom: 10px;
 }
+
+footer {
+  text-align: center;
+  font-weight: bold;
+}
