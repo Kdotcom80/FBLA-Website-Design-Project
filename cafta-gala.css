@@ -1,0 +1,88 @@
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+.cafta {
+  float: left;
+  text-align: left;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 25px;
+  margin: 0px;
+  margin-top: 10px;
+  color: #6e31aa;
+}
+
+nav {
+  background-color: white;
+  color: white;
+  text-align: right;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 14px 16px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: rgb(235, 234, 234);
+  border-radius: 5px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+  margin-top: 0;
+}
+
+p {
+  color: black;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #923af7;
+  font-weight: bold;
+}
+
+.learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #923af7;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #cc0044;
+}
+
+footer {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}

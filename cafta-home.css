@@ -1,0 +1,140 @@
+/* Home Page CSS Styles */
+
+@media only screen and (max-width: 600px) {
+
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #eac831 0% 35%, white 14% 56%, #6e31aa 28% 35%);
+  color: #333;
+}
+
+
+
+.cafta {
+  float: left;
+  text-align: left;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 25px;
+  margin: 0px;
+  margin-top: 10px;
+  color: #6e31aa;
+}
+
+nav {
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding: 14px 16px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: rgb(235, 234, 234);
+  border-radius: 5px;
+}
+
+
+
+.header {
+  margin-top: 150px;
+  margin-left: 100px;
+  color: white;
+  display: inline-block;
+  padding: 0px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  margin-top: 0px;
+}
+
+.coffee-alliance {
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  color: black;
+  margin-bottom: 250px;
+}
+
+
+.feathers {
+  display: inline-block;
+}
+
+.join-us-color {
+ color: #6e31aa;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+  column-gap: 30px;
+  padding: 0px;
+}
+
+
+
+.scholarship {
+  color: black;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+}
+
+.scholar-p {
+  color: #1eaf00;
+}
+
+.scholarship-money {
+  font-size: 27px;
+  margin-top: 50px;
+}
+
+
+
+.events {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 250px;
+}
+
+.event-color {
+  color: #eac831;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+.mardi-gras {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.mardi-gras-color {
+  color: pink;
+}

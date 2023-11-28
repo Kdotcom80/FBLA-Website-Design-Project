@@ -1,0 +1,79 @@
+@media only screen and (max-width: 600px) {
+
+}
+
+body {
+    background-image: url(pexels-jadson-thomas-542556.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #310E59c7;
+  }
+
+  .cafta {
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 0px;
+    margin-top: 10px;
+    color: #6e31aa;
+  }
+  
+  nav {
+    position: relative;
+    background-color: white;
+    color: white;
+    text-align: right;
+    padding: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 14px 16px;
+    display: inline-block;
+  }
+  
+  nav a:hover {
+    background-color: rgb(235, 234, 234);
+    border-radius: 5px;
+  }
+
+  .donation {
+    background-color: white;
+    max-width: 1000px;
+    max-height: 2000px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+  }
+
+  .donation-text {
+    display: inline-block;
+    padding: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  footer {
+    color: white;
+    position: relative;
+  }
