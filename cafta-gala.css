@@ -75,20 +75,6 @@ p {
   font-weight: bold;
 }
 
-.learn-more-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #923af7;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.learn-more-button:hover {
-  background-color: #cc0044;
-}
-
 footer {
   font-weight: bold;
   text-align: center;
