@@ -8,7 +8,7 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #eac831 0% 40%, white 14% 60%, #6e31aa 28% 35%);
+  background: linear-gradient(to bottom, #eac831 0% 35%, white 14% 57%, #6e31aa 28% 35%);
   color: #333;
 }
 
@@ -51,14 +51,6 @@ nav a:hover {
 
 
 
-.header {
-  margin-top: 150px;
-  margin-left: 100px;
-  color: white;
-  display: inline-block;
-  padding: 0px;
-}
-
 h1 {
   font-weight: 500;
   font-size: 60px;
@@ -72,19 +64,15 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 28px;
   color: black;
-  margin-bottom: 250px;
+  margin-bottom: 100px;
   letter-spacing: 0.25em;
-}
-
-
-.feathers {
-  display: inline-block;
-  margin-top: 150px;
 }
 
 .join-us-color {
  color: #6e31aa;
 }
+
+
 
 .home-grid {
   display: grid;
@@ -92,10 +80,14 @@ h1 {
   grid-template-rows: 1fr;
   row-gap: 10px;
   column-gap: 0px;
-  padding: 0px;
 }
 
-
+.feathers {
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 50px;
+  padding: 0px;
+}
 
 .scholarship-header {
   color: black;
@@ -103,7 +95,18 @@ h1 {
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
   display: inline-block;
+  padding: 0px;
 }
+
+.header {
+  margin-top: 80px;
+  margin-left: 100px;
+  color: white;
+  display: inline-block;
+  padding: 0px;
+}
+
+
 
 .scholar-p {
   color: #1eaf00;
