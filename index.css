@@ -8,7 +8,7 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #eac831 0% 35%, white 14% 57%, #6e31aa 28% 35%);
+  background: linear-gradient(to bottom, #eac831 0% 38%, white 14% 57%, #6e31aa 28% 35%);
   color: #333;
 }
 
@@ -99,7 +99,7 @@ h1 {
 }
 
 .header {
-  margin-top: 80px;
+  margin-top: 100px;
   margin-left: 100px;
   color: white;
   display: inline-block;
