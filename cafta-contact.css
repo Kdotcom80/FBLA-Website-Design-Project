@@ -98,10 +98,16 @@ section {
   font-size: 30px;
   text-align: center;
   font-family: monospace;
+  color: #6e31aa;
+  font-weight: bold;
+  text-shadow: #9552d8 1px 0 10px;
 }
 
-section h2 {
-  color: #923af7;
+h2 {
+  color: #eac831;
+  position: relative;
+  font-size: 55px;
+  margin-top: 129px;
 }
 
 ul {
