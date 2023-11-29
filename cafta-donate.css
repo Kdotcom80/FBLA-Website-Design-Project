@@ -83,3 +83,13 @@ body {
     position: relative;
     text-align: center;
   }
+
+  .don-form {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  
+  .don-form:hover {
+    color: #3af744;
+  }

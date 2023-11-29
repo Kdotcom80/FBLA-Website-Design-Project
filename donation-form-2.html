@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mardi Gras Donation Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('mardi-gras-background.jpg') center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Black overlay with 0.5 opacity */
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .donation-form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #8b008b; /* Purple */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    input {
+      width: calc(100% - 10px);
+      padding: 10px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 4px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #ffcc00; /* Gold */
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e69900; /* Darker Gold on Hover */
+    }
+
+    footer {
+      background-color: #222; /* Dark Gray */
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Mardi Gras Donation Form</h1>
+    <p>Your contribution brings the magic of Mardi Gras to our community!</p>
+  </div>
+
+  <div class="donation-form">
+    <form action="#" method="post"> <!-- Replace "#" with your form processing script -->
+      <label for="donationAmount">Donation Amount</label>
+      <input type="number" id="donationAmount" name="donationAmount" placeholder="Enter amount" required>
+
+      <label for="programSelection">Select Program</label>
+      <select id="programSelection" name="programSelection" required>
+        <option value="MissoulaChildrensTheatre">Missoula Children's Theatre</option>
+        <option value="ArtsWeek">Arts Week</option>
+        <!-- Add more program options as needed -->
+
+      </select>
+
+      <label for="donationLevel">Select Donation Level</label>
+      <select id="donationLevel" name="donationLevel" required>
+        <option value="Member">$30 - Member</option>
+        <option value="Subscriber">$75 - Subscriber (includes one movie pass)</option>
+        <option value="Supporter">$100 - Supporter (includes two movie passes)</option>
+        <option value="Donor">$250 - Donor</option>
+        <option value="Benefactor">$500 - Benefactor (4 movie passes and free admission to all events)</option>
+      </select>
+
+      <button type="submit">Donate Now</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Mardi Gras Donation Form | Designed by Your Organization</p>
+  </footer>
+
+</body>
+</html>
