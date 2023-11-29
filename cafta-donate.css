@@ -73,7 +73,7 @@ body {
   .donation-text {
     display: inline-block;
     padding: 50px;
-    font-family: monospace;
+    font-family: 'Fredoka', sans-serif;
     font-weight: bold;
     font-size: 15px;
   }
