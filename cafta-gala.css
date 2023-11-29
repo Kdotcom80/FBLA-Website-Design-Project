@@ -59,9 +59,11 @@ body {
 }
 
 h1 {
-  color: #333333;
+  color: #8235da;
   text-align: center;
   margin-top: 0;
+  font-family: 'Festive', cursive;
+  font-size: 50px;
 }
 
 p {
