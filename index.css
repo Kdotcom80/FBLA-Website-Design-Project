@@ -181,7 +181,7 @@ footer {
 
 .missoula-link {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -190,6 +190,14 @@ footer {
 
 .missoula-link:hover {
   color: rgb(176, 176, 243);;
+}
+
+.missoula-events {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
 }
 
 section {
