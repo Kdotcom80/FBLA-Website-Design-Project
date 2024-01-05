@@ -10,6 +10,7 @@ body {
   padding: 0;
   background: linear-gradient(to bottom, #eac831 0% 26%, white 14% 44%, #6e31aa 28% 35%);
   color: #333;
+  overflow-x: hidden;
 }
 
 /* Navigation Panel */
