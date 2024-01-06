@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Navigation Panel */
 .cafta-img {
   height: 55px;
@@ -206,7 +207,8 @@ section {
   background-image: url(mardi-gras-theme-background\(1\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 18px;
+  padding: 0;
+  margin: 0;
 }
 
 section::before {
@@ -216,5 +218,5 @@ section::before {
   left: 0;
   width: 100%;
   height: 1710px;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
 }
