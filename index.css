@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #eac831 0% 26%, white 14% 44%, #6e31aa 28% 35%);
@@ -146,6 +145,7 @@ footer {
   color: white;
   text-align: center;
   position: relative;
+  font-family: 'Arial', sans-serif;
 }
 
 /* Mardi Gras Information */
