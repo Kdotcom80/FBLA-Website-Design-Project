@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-size: 1em;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #eac831 0% 26%, white 14% 46%, #6e31aa 28% 35%);
@@ -19,16 +20,19 @@ body {
 /* Navigation Panel/Bar */
 .cafta-img {
   height: 55px;
+  max-height: 100%;
   float: left;
 }
 
-.cafta {
+.cafta-nav-header {
   float: left;
   text-align: left;
   font-weight: bold;
   font-family: monospace;
   font-size: 25px;
-  margin: 0px;
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0%;
   margin-top: 10px;
   color: #6e31aa;
 }
@@ -86,6 +90,7 @@ h1 {
   grid-template-rows: 1fr;
   row-gap: 10px;
   column-gap: 0px;
+  max-width: 100%;
 }
 
 
@@ -99,8 +104,9 @@ h1 {
 /* Feathers Design/Graphic */
 
 .feathers {
-  margin-top: 50px;
-  padding: 0px;
+  margin-top: 50%;
+  margin: 0%;
+  padding: 0%;
   width: 150px;
   height: auto;
 }
