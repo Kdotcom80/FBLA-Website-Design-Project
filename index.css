@@ -1,19 +1,16 @@
 /* Home Page CSS Styles */
 
-@media only screen and (max-width: 600px) {
-
-}
-
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #eac831 0% 26%, white 14% 46%, #6e31aa 28% 35%);
+  background: linear-gradient(to bottom, #eac831 0%, #eac831 26%, white 26%, white 46%, #6e31aa 46%, #6e31aa 81%, white 81%, white 100%);
   color: #333;
   overflow-x: hidden;
   z-index: -1;
   position: relative;
+  flex-shrink: 10;
 }
 
 
@@ -21,28 +18,23 @@ body {
 .cafta-img {
   height: 55px;
   max-height: 100%;
-  float: left;
 }
 
 .cafta-nav-header {
-  float: left;
-  text-align: left;
   font-weight: bold;
   font-family: monospace;
-  font-size: 25px;
-  max-width: 50%;
-  max-height: 50%;
-  margin: 0%;
-  margin-top: 10px;
+  font-size: 20px;
   color: #6e31aa;
 }
 
 nav {
   background-color: white;
-  color: white;
+  color: #6e31aa;
   text-align: center;
   padding: 10px;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
@@ -86,10 +78,8 @@ h1 {
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
   row-gap: 10px;
-  column-gap: 0px;
   max-width: 100%;
 }
 
@@ -236,4 +226,31 @@ section::before {
   width: 100%;
   height: 1730px;
   background: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    margin-left: 20px;
+  }
+
+  .feathers {
+    width: 100px;
+  }
+
+  .scholarship-header,
+  .events,
+  .mardi-gras,
+  .missoula {
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
