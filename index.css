@@ -54,19 +54,17 @@ nav a:hover {
 
 h1 {
   font-weight: 500;
-  font-size: 60px;
+  font-size: 4vw;
   font-family: 'Raleway', sans-serif;
   color: black;
-  margin-top: -2px;
-  padding: -2px;
 }
 
 .coffee-alliance {
   font-weight: 400;
   font-family: 'Raleway', sans-serif;
-  font-size: 28px;
+  font-size: 1.8vw;
   color: black;
-  margin-bottom: 100px;
+  margin-bottom: auto;
   letter-spacing: 0.18em;
 }
 
@@ -86,18 +84,14 @@ h1 {
 
 .header {
   margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 15%;
   color: white;
-  padding: 0px;
 }
 
 /* Feathers Design/Graphic */
 
-.feathers {
-  margin-top: 50%;
-  margin: 0%;
-  padding: 0%;
-  width: 150px;
+.feathers img {
+  width: 150%;
   height: auto;
 }
 
