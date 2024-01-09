@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #eac831 0%, #eac831 26%, white 26%, white 46%, #6e31aa 46%, #6e31aa 81%, white 81%, white 100%);
+  background-repeat: no-repeat;
   color: #333;
   overflow-x: hidden;
   z-index: -1;
@@ -20,7 +21,7 @@ body {
   max-height: 100%;
 }
 
-.cafta-nav-header {
+#cafta-nav-header {
   font-weight: bold;
   font-family: monospace;
   font-size: 20px;
@@ -59,7 +60,7 @@ h1 {
   color: black;
 }
 
-.coffee-alliance {
+#coffee-alliance-paragraph {
   font-weight: 400;
   font-family: 'Raleway', sans-serif;
   font-size: 1.8vw;
@@ -68,7 +69,7 @@ h1 {
   letter-spacing: 0.18em;
 }
 
-.join-us-color {
+#join-us-color {
  color: #6e31aa;
 }
 
@@ -97,11 +98,11 @@ h1 {
 
 /* Scholarship Information */
 
-.scholar-p {
+#scholarship-color {
   color: #1eaf00;
 }
 
-.scholarship-money {
+#scholarship-money {
   font-size: 1.5vw;  
 }
 
@@ -115,19 +116,7 @@ h1 {
 
 /* Events Information */
 
-.events {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  margin-bottom: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  position: relative;
-}
-
-.event-color {
+#event-color {
   color: #eac831;
 }
 
@@ -137,38 +126,18 @@ footer {
   color: white;
   text-align: center;
   position: sticky;
-  z-index: 999;
   font-family: 'Arial', sans-serif;
-  margin: 0;
 }
 
 /* Mardi Gras Information */
 
-.mardi-gras {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  padding-top: 100px;
-  padding-bottom: 150px;
-  position: relative;
-}
-
-.mardi-gras-color {
+#mardi-gras-color {
   color: #ff20b5;
 }
 
 /* Missoula Information and Registration */
 
-.missoula {
-  font-size: 30px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  position: relative;
-}
-
-.missoula-header {
+#missoula-header {
   text-align: center;
   color: white;
   position: relative;
@@ -187,7 +156,7 @@ footer {
   color: rgb(176, 176, 243);;
 }
 
-.missoula-events {
+#missoula-events {
   color: white;
   text-align: center;
   font-weight: bold;
@@ -201,9 +170,7 @@ section {
   background-image: url(mardi-gras-theme-background\(1\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
-  height: 1730px;
+  height: 1568px;
 }
 
 /* Black Overlay/Tint */
@@ -214,33 +181,19 @@ section::before {
   top: 100;
   left: 0;
   width: 100%;
-  height: 1730px;
+  height: 1568px;
   background: rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 800px) {
-  body {
-    font-size: 0.8em;
-  }
-
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .header {
-    margin-left: 20px;
-  }
-
-  .feathers {
-    width: 100px;
-  }
-
-  .scholarship-header,
-  .events,
-  .mardi-gras,
-  .missoula {
-    font-size: 24px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+.events,
+.mardi-gras,
+.missoula {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
 }

@@ -1,46 +1,40 @@
 /* About Page CSS Styles */
 
-@media only screen and (max-width: 600px) {
-
-}
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-
+/* Navigation Panel/Bar */
 
 .cafta-img {
   height: 55px;
-  float: left;
+  max-height: 100%;
 }
 
-.coffee-alliance-nav {
-  float: left;
-  text-align: left;
+#cafta-nav-header {
   font-weight: bold;
   font-family: monospace;
-  font-size: 25px;
-  margin: 0px;
-  margin-top: 10px;
+  font-size: 20px;
   color: #6e31aa;
 }
 
-
-
 nav {
   background-color: white;
-  color: white;
-  text-align: right;
+  color: #6e31aa;
+  text-align: center;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
   font-weight: bold;
+  color: black;
   padding: 14px 16px;
   display: inline-block;
 }
@@ -51,26 +45,60 @@ nav a:hover {
 }
 
 
+/* Graphics side by side */
 
-.cafta-image {
-  margin-top: 200px;
-  margin-left: 200px;
- }
 
-.cafta-about-p {
+.cafta-imgs-right {
+  display: grid;
+  width: 161%;
+  height: auto;
+}
+
+
+#about-p {
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: black;
   text-align: center;
   vertical-align: auto;
-  }
-
-.cafta-about-grid {
-  display: grid;
-  grid-template-columns: auto auto;
+  max-width: 60%;
+  background-color: #1eaf00;
+  display: inline-block;
 }
 
+
+.learn-more-button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+  padding: 0 32px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+    
+  margin-left: 24%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+    
+.learn-more-button:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+  transform: translateY(-2px);
+}
+  
+    
+.learn-more-button:active{
+  box-shadow: inset 0px 3px 7px #3c4fe0;
+  transform: translateY(2px);
+}
 
 
 h1 {
@@ -93,7 +121,7 @@ h2 {
 
 
 
-.mission {
+#mission {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
@@ -105,7 +133,7 @@ h2 {
   position: relative;
 }
 
-.mission-color {
+#mission-color {
   color: #923af7;
   position: relative;
 }
@@ -118,42 +146,12 @@ footer {
   text-align: center;
 }
 
-
-.learn-more-button {
-display: inline-block;
-outline: 0;
-border: 0;
-cursor: pointer;
-will-change: box-shadow,transform;
-background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
-box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
-padding: 0 32px;
-border-radius: 6px;
-color: #fff;
-font-size: 18px;
-text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
-transition: box-shadow 0.15s ease,transform 0.15s ease;
-
-margin-left: 350px;
-padding-top: 10px;
-padding-bottom: 10px;
-text-decoration: none;
-}
-
-.learn-more-button:hover {
-  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
-  transform: translateY(-2px);
-}
-
 .bottom {
   text-align: center;
   margin-top: 0px;
 }  
 
-.learn-more-button:active{
-  box-shadow: inset 0px 3px 7px #3c4fe0;
-  transform: translateY(2px);
-}
+
 
 section {
   background-image: url(mardi-gras-theme-background\(1\).jpg);
