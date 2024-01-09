@@ -45,31 +45,26 @@ nav a:hover {
 }
 
 
-/* Graphics side by side */
+/* Graphics */
 
-
-.cafta-imgs-right {
-  display: grid;
-  width: 161%;
-  height: auto;
+.lousiana-saints {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
-
-#about-p {
+.about-paragraph {
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: black;
   text-align: center;
-  vertical-align: auto;
-  max-width: 60%;
-  background-color: #1eaf00;
-  display: inline-block;
 }
 
 
 .learn-more-button {
-  display: inline-block;
   outline: 0;
   border: 0;
   cursor: pointer;
@@ -83,7 +78,6 @@ nav a:hover {
   text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
   transition: box-shadow 0.15s ease,transform 0.15s ease;
     
-  margin-left: 24%;
   padding-top: 10px;
   padding-bottom: 10px;
   text-decoration: none;
