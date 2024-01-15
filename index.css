@@ -209,45 +209,83 @@ section::before {
 
 /* Media Queries */
 
-
-@media screen and (max-width: 600px) {
-  .nav a:not(:first-child) {
-    display: none;
-  }
-
-  .nav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .nav.responsive {
-    position: relative;
-  }
-
-  .nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
   }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav a {
+    padding: 10px 0;
+  }
+
+  .missoula-link, #missoula-events, .events, .mardi-gras, .missoula {
+    font-size: 24px;
+  }
 }
 
-@media screen and (max-width: 480px) {
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   body {
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+
+  .nav a {
+    padding: 14px 16px;
+  }
+
+  .missoula-link, #missoula-events, .events, .mardi-gras, .missoula {
+    font-size: 28px;
+  }
+}
+
+/* For desktops and larger */
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+
+  .nav a {
+    padding: 14px 16px;
+  }
+
+  .missoula-link, #missoula-events, .events, .mardi-gras, .missoula {
+    font-size: 30px;
   }
 }
