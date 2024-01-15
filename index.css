@@ -4,18 +4,15 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   margin: 0;
-  padding: 0;
   background: linear-gradient(to bottom, #eac831 0%, #eac831 26%, white 26%, white 46%, #6e31aa 46%, #6e31aa 81%, white 81%, white 100%);
   background-repeat: no-repeat;
-  color: #333;
   overflow-x: hidden;
   z-index: -1;
-  position: relative;
-  flex-shrink: 10;
 }
 
 
 /* Navigation Panel/Bar */
+
 .cafta-img {
   height: 55px;
   max-height: 100%;
@@ -28,7 +25,7 @@ body {
   color: #6e31aa;
 }
 
-nav {
+.nav {
   background-color: white;
   color: #6e31aa;
   text-align: center;
@@ -36,9 +33,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
-nav a {
+.nav a {
+  display: block;
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -46,9 +45,18 @@ nav a {
   display: inline-block;
 }
 
-nav a:hover {
+.nav a:hover {
   background-color: rgb(235, 234, 234);
   border-radius: 5px;
+}
+
+.nav .icon {
+  display: none;
+}
+
+.nav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 /* Coffee Alliance Information */
@@ -70,7 +78,7 @@ h1 {
 }
 
 #join-us-color {
- color: #6e31aa;
+  color: #6e31aa;
 }
 
 /* Grid */
@@ -103,7 +111,7 @@ h1 {
 }
 
 #scholarship-money {
-  font-size: 1.5vw;  
+  font-size: 1.5vw;
 }
 
 .scholarship-header {
@@ -153,7 +161,8 @@ footer {
 }
 
 .missoula-link:hover {
-  color: rgb(176, 176, 243);;
+  color: rgb(176, 176, 243);
+  ;
 }
 
 #missoula-events {
@@ -196,4 +205,49 @@ section::before {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {
+    display: none;
+  }
+
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {
+    position: relative;
+  }
+
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
 }

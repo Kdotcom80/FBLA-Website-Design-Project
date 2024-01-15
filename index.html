@@ -18,18 +18,20 @@
 <body>
 
   <!--Navigation Panel-->
-<nav>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <img class="cafta-img" src="cafta-image.jpg" alt="Coffee Alliance for the Arts Logo">
-
-  <p id="cafta-nav-header">Coffee Alliance for the Arts</p>
-
-  <a href="index.html">Home</a>
-  <a href="cafta-about.html">About</a>
-  <a href="cafta-gala.html">Gala</a>
-  <a href="cafta-donate.html">Donate</a>
-  <a href="cafta-contact.html">Contact</a>
-</nav>
+  <div class="nav" id="myNavbar">
+    <img class="cafta-img" src="cafta-image.jpg" alt="Coffee Alliance for the Arts Logo">
+    <p id="cafta-nav-header">Coffee Alliance for the Arts</p>
+    <a href="index.html">Home</a>
+    <a href="cafta-about.html">About</a>
+    <a href="cafta-gala.html">Gala</a>
+    <a href="cafta-donate.html">Donate</a>
+    <a href="cafta-contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 
 <!--Top Half of the Page-->
 
@@ -102,6 +104,15 @@
 
 </section>
 
-<script src="script.js"></script>
+<script>
+  function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "nav") {
+          x.className += " responsive";
+      } else {
+          x.className = "nav";
+      }
+  }
+</script>
 </body>
 </html>
