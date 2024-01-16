@@ -11,8 +11,7 @@ body {
 }
 
 
-/* Navigation P
-]anel/Bar */
+/* Navigation Panel/Bar */
 
 .cafta-img {
   height: 55px;
@@ -43,7 +42,6 @@ body {
   font-weight: bold;
   color: black;
   padding: 14px 16px;
-  display: inline-block;
 }
 
 .nav a:hover {
@@ -86,9 +84,8 @@ h1 {
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 10px;
-  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 
@@ -163,7 +160,6 @@ footer {
 
 .missoula-link:hover {
   color: rgb(176, 176, 243);
-  ;
 }
 
 #missoula-events {
@@ -237,6 +233,35 @@ section::before {
   }
 }
 
+/* For very small devices (phones, 400px and below) */
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 12px; /* Smaller font size for very small screens */
+  }
+
+  h1 {
+    font-size: 20px; /* Adjust the heading size to fit smaller screens */
+  }
+
+  .nav {
+    flex-direction: column; /* Keep the nav vertical */
+  }
+
+  .nav a {
+    padding: 8px 0; /* Adjust padding for smaller screens */
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr; /* Single column layout for very small screens */
+  }
+
+  .feathers img {
+    width: 100%; /* Full width images on very small screens */
+  }
+
+  /* Add additional styles as needed for very small screens */
+}
+
 /* For tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   body {
@@ -288,5 +313,11 @@ section::before {
 
   .missoula-link, #missoula-events, .events, .mardi-gras, .missoula {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-grid {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
   }
 }
