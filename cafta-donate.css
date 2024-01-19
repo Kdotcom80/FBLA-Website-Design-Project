@@ -64,13 +64,12 @@ body {
     max-width: 1000px;
     max-height: 2000px;
     position: relative;
-    margin-top: 100px;
-    margin-left: 500px;
+    margin-left: 15%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
     border-radius: 10px;
   }
 
-  .donation-text {
+  .p1 {
     display: inline-block;
     padding: 50px;
     font-family: 'Fredoka', sans-serif;
@@ -82,14 +81,30 @@ body {
     color: white;
     position: relative;
     text-align: center;
+    font-weight: bold;
   }
 
   .don-form {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     text-align: center;
+    color: #36e73e;
   }
   
   .don-form:hover {
-    color: #3af744;
+    color: #29aa30;
+  }
+
+  @media screen and (max-width: 600px) {
+    .donation {
+      margin-left: 0;
+    }
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .donation {
+      margin-left: 0;
+    }
+    
   }
