@@ -18,18 +18,21 @@
 
     <div class="overlay"></div>
 
-  <nav>
+  <!--Navigation Panel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <div class="nav" id="myNavbar">
     <img class="cafta-img" src="cafta-image.jpg" alt="Coffee Alliance for the Arts Logo">
-
-  <p class="cafta">Coffee Alliance for the Arts</p>
-      
+    <p id="cafta-nav-header">Coffee Alliance for the Arts</p>
     <a href="index.html">Home</a>
     <a href="cafta-about.html">About</a>
     <a href="cafta-gala.html">Gala</a>
     <a href="cafta-donate.html">Donate</a>
     <a href="cafta-contact.html">Contact</a>
-  </nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 
   <div class="donation">
     <div class="p1">
@@ -104,6 +107,17 @@
   <footer>
     <p>&copy; 2023 Donate Page | Designed by Kennidy Paulk, Valeria Vega, and Oliver Calel</p>
   </footer>
+
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+  </script>
 
 </body>
 </html>
