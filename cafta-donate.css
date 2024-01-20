@@ -6,7 +6,6 @@ body {
   background-repeat: no-repeat;
   font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 0;
   background-color: #f5f5f5;
   color: #333;
 }
@@ -21,11 +20,12 @@ body {
 }
 
 .cafta-img {
-  height: 55px;
+  height: 3.5em;
   float: left;
+  margin: 0;
 }
 
-.cafta {
+#cafta-nav-header {
   float: left;
   text-align: left;
   font-weight: bold;
@@ -36,24 +36,34 @@ body {
   color: #6e31aa;
 }
 
-nav {
+.nav {
+  overflow: hidden;
   background-color: white;
-  color: white;
-  text-align: right;
-  padding: 10px;
+  position: relative;
 }
 
-nav a {
-  text-decoration: none;
+.nav a {
+  float: right;
+  display: block;
   color: black;
-  font-weight: bold;
+  text-align: center;
   padding: 14px 16px;
-  display: inline-block;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-nav a:hover {
-  background-color: rgb(235, 234, 234);
-  border-radius: 5px;
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.nav .icon {
+  display: none;
 }
 
 .donation {
@@ -94,6 +104,8 @@ footer {
   color: #29aa30;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 844px) {
   .donation {
     margin-left: 0;
@@ -120,4 +132,51 @@ footer {
     border-radius: 10px;
   }
 
+}
+
+@media screen and (max-width: 800px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #cafta-nav-header {
+    font-size: 2.8vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #6e31aa;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 8%;
+    top: 0;
+    padding-bottom: 10px;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
 }
